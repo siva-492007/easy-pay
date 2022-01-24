@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+    <servlet-name>loginpage</servlet-name>
+    <servlet-class>Loginservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginpage</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>signpage</servlet-name>
+    <servlet-class>RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>signpage</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>bankpage</servlet-name>
+    <servlet-class>Bankservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>bankpage</servlet-name>
+    <url-pattern>/bank</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Addpage</servlet-name>
+    <servlet-class>Addservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Addpage</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>transferpage</servlet-name>
+    <servlet-class>Transferservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>transferpage</servlet-name>
+    <url-pattern>/transfer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>historypage</servlet-name>
+    <servlet-class>Historyservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>historypage</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+<servlet>
+  <servlet-name>generatepage</servlet-name>
+  <servlet-class>Generateservlet</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>generatepage</servlet-name>
+<url-pattern>/generate</url-pattern>
+</servlet-mapping>
+  <servlet>
+    <servlet-name>scanpage</servlet-name>
+    <servlet-class>Scanservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>scanpage</servlet-name>
+    <url-pattern>/scan</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>pdfpage</servlet-name>
+    <servlet-class>pdfservlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>pdfpage</servlet-name>
+    <url-pattern>/pdf</url-pattern>
+  </servlet-mapping>
+</web-app>
